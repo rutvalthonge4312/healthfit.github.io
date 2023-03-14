@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym SinUp Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body{
+            background-image: url(abs-g15139c48f_1920.jpg);
+            color: aliceblue;
+            font-family: 'Anton', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .mid{
+            width: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin: auto;
+           margin-top: 15px;
+           
+        }
+        nav li a{
+            color: aliceblue;
+            text-decoration: none;
+            margin-left: 45px;
+            margin-right: 45px;
+            transition-property:color;
+            transition-duration: 1s;
+            transition: all 1s ease;
+        }
+        nav li{
+            display: inline;
+            margin: auto;      
+            transition: all 1s ease;
+        }
+        nav{
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 15px;
+            margin: auto;
+        }
+       .leftcorener{
+        float: left;
+        top: 0;
+        position: absolute;
+        display: flex;
+        left: 15px;
+        padding: 5px 5px;
+        margin: 5px 5px;
+      margin-top: 15px;
+      transition: all 5s ease;
+       
+       }
+       .rightcorner{
+       display: flex;
+       align-items: center;
+       position: absolute;
+       right: 15px;
+       top: 0;
+        float: right;
+       
+       }
+       .cntainer{
+        border: 2px solid white;
+        width: 600px;
+        float: right;
+        margin-top: 250px;
+        margin-right: 60px;
+        font-family: 'Anton', sans-serif;
+        border-radius: 35px;
+       
+       }
+      
+       .cntainer form {
+        margin: auto;
+        width: 550px;
+        float: right;
+        display: flex;
+        flex-direction: column;
+       padding: 15px;
+       font-family: 'Anton', sans-serif;
+       
+       }
+       .cntainer form input{
+        width: 300px;
+        text-align: center;
+       
+        margin: auto;
+        margin-top: 15px;
+       
+       }
+       .cntainer form button{
+        width: 200px;
+        background-color: rgb(229, 143, 86);
+        text-align: center;
+        margin: auto;
+        margin-top: 45px;
+        border-radius: 15px;
+        font-family: 'Anton', sans-serif;
+      
+       }
+       .cntainer h1{
+        text-align: center;
+        
+       }
+       .rightcorner button{
+        background-color: rgb(229, 143, 86);
+        text-align: center;
+        margin: 15px 15px;
+        height: 25px;
+        width: 65px;
+        border-radius: 15px;
+        font-family: 'Anton', sans-serif;
+       }
+      
+       nav li  :hover{
+        transition: all 1s ease;
+      transform: translateZ(15px);
+        text-decoration: solid;
+        
+        color:  rgb(229, 143, 86);
+        
+       }
+       nav li a :hover{
+        transform: translateZ(45px);
+       }
+       .rightcorner  :hover{
+       
+        cursor: pointer;
+       }
+       form :hover{
+        
+        cursor: pointer;
+        font-weight: bold;
+        
+       }
+       .leftcorener :hover{
+        transition: all 1s ease;
+        transform: scale(1.2);
+       }
+       .mid nav li .active {
+        text-decoration: solid;
+        color:  rgb(229, 143, 86);
+        background-color: rgb(20, 20, 20);
+
+       }
+    </style>
+  </head>
+  <body>
+    <div class="mid">
+        <p>
+            <nav>
+                <ul>
+                  <li>
+                    <a href="HomePage.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="aboutUSpage.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="LogInPage.html">Log In</a>
+                  </li>
+                  <li>
+                    <a href="GymSinUpPage.html" class="active" >Take Addmission</a>
+                  </li>
+                </ul>
+              </nav>
+        </p>
+    </div>
+        <div class="leftcorener">
+            <p>HealthFit Fitness GYM</p>
+            <img src="pngwing.com (2).png" alt="" width="50px" height="50px">
+
+        </div>
+        <div class="rightcorner">
+          <p>
+            <button>Log In</button>
+            <button>Rate Us</button>
+        </p>
+      </div>
+
+    <div class="cntainer">
+        <h1>Join The GYM Now!</h1>
+        <form action="backend.php">
+            <input type="text" placeholder="Enter the First Name:">
+            <input  type="text" placeholder="Enter the Last Name:">
+           
+            <input  type="email" name="email" id="costEmail" placeholder="Enter the Email Id:">
+            <input  type="number" placeholder="Enetr the Mobile Number:">
+           <Button>
+            Submit
+           </Button>
+        </form>
+    </div>
+    
+  </body>
+</html>
