@@ -20,31 +20,39 @@
         margin: 0;
         padding: 0;
         font-size: 20px;
-        color: rgb(95, 95, 95);
+        color: rgb(82, 82, 82);
+        background-image: url(https://images.pexels.com/photos/7794362/pexels-photo-7794362.jpeg?auto=compress&cs=tinysrgb&w=600);
       }
       .container {
         display: flex;
-        text-align: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        margin: auto;
-        border: 2px solid rgb(12, 12, 12);
-        border-radius: 15px;
-        text-align: center;
         width: 900px;
-        padding: 5px;
-        margin-top: 25px;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 15px;
+        border: 2px solid black;
+        background-color: rgb(0, 0, 0);
+        border-radius: 35px;
+      }
+      .container nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
       }
       .container nav li {
-        display: inline;
-        font-family: "Anton", sans-serif;
-        padding: 25px;
+        list-style: none;
       }
-      .container nav li a {
+      .container nav .innav {
+        padding: 15px;
+        margin: 15px;
+      }
+      .container nav .innav a {
         text-decoration: none;
-        color: rgb(16, 17, 17);
-
-        font-size: 25px;
+        transition: all 2sec ease;
+        color: rgb(65, 65, 65);
+        color: aqua;
       }
       .right {
         display: inline;
@@ -79,6 +87,7 @@
         line-height: 1.5;
       }
       .maincontaint h1 {
+        color: rgb(39, 39, 39);
         font-family: "Anton", sans-serif;
       }
       .images {
@@ -119,25 +128,28 @@
         margin-top: 25px;
       }
       footer li :hover {
-        border: 1px solid aqua;
+        transition: all 1s ease;
+
+        border-bottom: 1px solid aqua;
         border-radius: 15px;
         background-color: rgb(23, 23, 23);
       }
-      .container li :hover {
+      .container nav .innav a:hover {
+        color: rgb(210, 187, 232);
         text-decoration: solid;
-        border: 1.5px solid grey;
-        border-radius: 10px;
-        background-color: antiquewhite;
       }
-
+      .container nav :hover {
+        transition: all 1.5s ease;
+        transform: translateY(-3px);
+      }
       .right :hover {
         cursor: pointer;
         font-weight: bold;
+        transition: all 1s ease;
+        transform: translateY(-5px);
       }
       .container nav li .active {
-        border: 1px solid gray;
-        border-radius: 15px;
-        background-color: antiquewhite;
+        border-bottom: 1px solid rgb(187, 187, 187);
       }
     </style>
   </head>
@@ -145,19 +157,23 @@
     <div class="container">
       <nav>
         <li>
-          <a href="index.html">Home</a>
+          <div class="innav">
+            <a href="index.html">Home</a>
+          </div>
         </li>
         <li>
-          <a href="#" class="active">About Us</a>
+          <div class="innav"><a href="#" class="active">About Us</a></div>
         </li>
         <li>
-          <a href="#">Contact Us</a>
+          <div class="innav"><a href="#">Contact Us</a></div>
         </li>
         <li>
-          <a href="LogInPage.html">Log in</a>
+          <div class="innav"><a href="LogInPage.html">Log in</a></div>
         </li>
         <li>
-          <a href="GymSinUpPage.html">Take Addmission</a>
+          <div class="innav">
+            <a href="GymSinUpPage.html">Take Addmission</a>
+          </div>
         </li>
       </nav>
     </div>
